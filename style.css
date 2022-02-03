@@ -76,7 +76,7 @@ button {
     padding: 20px 0px 0px 120px;
     position: fixed;
     top:0;
-    border-bottom: solid #0D346C;
+    box-shadow: 0 2px 3px -2.5px rgb(118, 137, 160);
     z-index: 10000;
 
 
@@ -90,11 +90,12 @@ button {
 #header {
     margin-top:12vh;
     display: relative;
-    background-image: url("pa_bg_2_cropped_2.png");
+    background-image: url("pa_banner_4.png");
     height: 50vh;
     background-size: cover;
     
 }
+
 
 #stat-container {
     text-align: center;
@@ -139,6 +140,16 @@ button {
     image-rendering: crisp-edges;
     image-rendering: optimizeQuality;
     image-rendering: -moz-crisp-edges;
+}
+
+#logo2 {
+    background-image: url("logo1a\ yt.png");
+    background-size: cover;
+    position: relative;
+    z-index: 100000000;
+    max-height: 52.68px;
+    width: 172px;
+    color: blue;
 }
 
 #pages {
@@ -217,7 +228,7 @@ button {
 
 
 #h-article {
-    width: 50%;
+    width: 45%;
     max-height: 20vh;
     padding: 0px;
     margin: 70px 0px 0px 120px;
@@ -240,7 +251,7 @@ button {
     margin-top: 60px;
     font-size: 1.5em;
     padding: 13px 53px 13px 53px;
-    animation: 1.6s ease-in 1.75s 1 fadeIn;
+    animation: 1.6s ease-in 1.6s 1 fadeIn;
     animation-fill-mode: forwards;
     
 }
@@ -316,56 +327,276 @@ i {
     font-size: 1em;
 }
 
+#benefits {
+    display: flex;
+    flex-direction: column;
+    padding: 120px;
+    padding-top: 60px;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.fa-check {
+    color:#348CFB;
+    margin-right: 5px;
+}
+
+#list {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 40px;
+
+}
+
+.first-list {
+    flex: 1;
+    border: solid black 0px;
+    list-style: none;
+    text-align: left;
+    font-size: 1.2em;
+    margin: 0px;
+
+}
+
+
+.benefit-list {
+    padding: 10px;
+
+    margin-bottom: 20px;
+ 
+}
+
+#summary {
+    background-color: #E8F1FC;
+    padding: 100px 120px 100px 120px;
+}
+
+#about-container #summary-text {
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+#summary-text {
+    font-size: 1.2em;
+    margin-left: 60px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#summary-text button {
+    max-width: 20%;
+}
+
+#summary-headline {
+    margin-bottom: 40px;
+}
+
+#image-and-text {
+    display: flex;
+    flex-direction: row;
+}
+
 #about {
     margin-top:12vh;
+   
 }
 
 #about-info {
-    margin: 120px 120px 0px 120px;
-    max-width: 40%;
+ 
+    max-width: 90%;
+    padding: 100px 120px 100px 120px;
+
+
 }
-#a-headline {
-    font-size: 2.5em;
-}
+
 
 #a-text {
     margin-top: 20px;
     font-size: 1.1em;
+    max-width: 70%;
+
 }
 
-#about-container {
+#about-mike {
     display: flex;
     flex-direction: row;
     align-content: center;
 }
 
+#about-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
 #about-image {
-    margin-top: 120px;
-    background-color:#48A9A6;
-    width: 75vh;
-    height: 60vh;
+   
+    margin-left: 40px;
+    width: 20%;
+    max-height: 80%;
+    background-image: url("Spirakis\ Headshot.jpg");
+    background-size:cover;
+}
+
+#a-video-container {
+    margin-top: 60px;
+    background-color:#0D346C;
+    display: flex;
+    flex-direction: row;
+    padding: 120px;
+}
+
+#a-v-headline {
+    color:white;
+    font-size: 2em;
+}
+
+#a-v-text {
+    color: white;
+    margin-top: 20px;
+    font-size: 1em;
 }
 
 #contact {
     display: flex;
     flex-direction: column;
     width: 30%;
-    margin: 0px 0px 0px 120px;
+    margin: 0px 0px 0px 20px;
 }
 
 
 input {
     margin: 10px 0px 10px 0px;
+    width: 250%;
+    height: 30px;
 }
 
 
 #contact-container
 {
-    margin-top:12vh;
+    margin: 17vh 0px 0px 120px;
+    background-color: white;
+    border-radius: 30px;
+    width: 40%;
+    padding: 40px 0px 60px 40px;
+
 }
 
 #contact-headline {
-    margin: 50px 0px 40px 120px;
+    margin: 20px 0px 40px 20px;
 
 }
+
+#contact-body {
+    background-color: #0D346C;
+}
+
+#services-header {
+    margin-top:12vh;
+    display: relative;
+    background-image: url("pa_bg_2_cropped_2.png");
+    height: 45vh;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+}
+
+#services-text {
+        
+    margin-top: 30px;
+    color: white;
+    font-size: 1.5em;
+    max-width: 100%;
+    
+    
+}
+
+#services-headline {
+
+    color:white;
+    font-size: 4.2em;
+   
+}
+
+#services-article {
+    width: 100%;
+    max-height: 20vh;
+    padding: 0px;
+    margin: 100px 0px 0px 0px;
+    border: none;
+    text-align: center;
+  
+}
+
+#services-container {
+    margin: 30px 120px 70px 120px;
+}
+
+#services-container .headline {
+    color:#0D346C;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+#services-container .text {
+    font-size: 1.1em;
+}
+
+.agenda-headline {
+    font-size: 1.3em;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    color:#48A9A6;
+    margin: 20px 0px 20px 0px;
+    font-weight:500;
+}
+
+#services-agenda {
+    border: 1px solid #48A9A6;
+    border-radius: 30px;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+#services-agenda .headline {
+    margin-top: 0px;
+}
+
+#services-includes
+{
+    margin-top: 60px;
+}
+
+.green {
+    background-color: #48A9A6;
+}
+.unformatted {
+    list-style: none;
+}
+
+button:hover {
+    background-color: white;
+    border:1px solid #348CFB;
+    color: #348CFB;
+    cursor: pointer;
+}
+
+#h-button:hover {
+    background-color: white;
+    border:1px solid #348CFB;
+    color: #348CFB;
+    cursor: pointer;
+}
+
+.testimonials-container {
+    margin: 120vh 0px 0px 120px;
+    color: #0D346C;
+}
+
+
 
