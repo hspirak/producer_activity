@@ -260,7 +260,36 @@ i {
     color:#48A9A6;
 }
 
-#testimonials {
+#testimonial-grid {
+    background-color: #E8F1FC;
+    display: flex;
+    padding: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+   
+    
+}
+
+
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 30px 20px;
+    color:#0D346C;
+    padding: 30px 60px 30px 60px;
+    background-color: white;
+    border-radius: 20px;
+    width: 20%;
+    height:200px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#testimonials-landing {
     background-color: #E8F1FC;
     display: flex;
     padding: 50px;
@@ -269,7 +298,7 @@ i {
     justify-content: center;
 }
 
-.testimonial {
+.testimonial-landing {
     display: flex;
     flex-direction: column;
     margin: 0px 20px 0px 20px;
@@ -280,7 +309,8 @@ i {
 
 }
 
-.testimonial i {
+.testimonial-landing i {
+    
     text-align: center;
     margin-bottom: 20px;
 }
@@ -593,9 +623,26 @@ button:hover {
     cursor: pointer;
 }
 
-.testimonials-container {
-    margin: 120vh 0px 0px 120px;
+#testimonials-container {
+   margin: 100px 120px 100px 120px;
+    
     color: #0D346C;
+}
+
+.c-headline {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    color:#0D346C;
+    margin: 10px 0px 0px 0px;
+    font-weight:500;
+}
+
+#testimonials {
+    margin-top: 12vh;
+    margin: 100px 120px 100px 120px;
+    
 }
 
 
