@@ -1,12 +1,4 @@
-
-.headline {
-    font-size: 2em;
-    font-family: 'Fjalla One', sans-serif;
-    text-transform: uppercase;
-    color:#0D346C;
-    margin: 10px 0px 0px 0px;
-    font-weight:500;
-}
+/* || SITEWIDE ||*/
 
 
 body {
@@ -29,7 +21,7 @@ body {
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
     color:#0D346C;
-    margin: 10px 0px 0px 0px;
+    margin-bottom: 20px;
     font-weight:500;
 }
 
@@ -55,22 +47,30 @@ button {
     margin-top: 30px;
 }
 
+button:hover {
+    background-color: white;
+    border:1px solid #348CFB;
+    color: #348CFB;
+    cursor: pointer;
+}
+
+
 .article {
     width: 28%;
     margin: 30px 0px 10px 10px;
     padding: 20px 20px 20px 0px;
-    border: 1px solid #48A9A6;
-    border-radius: 13px;
+    /* border: 1px solid #48A9A6;
+    border-radius: 13px; */
 }
 
-.text {
-    font-size: .9em;
+.text { /*redundant???*/
+    font-size: 1em;
 }
 
 #nav {
     width: 100%;
     background-color: white;
-    min-height: 10vh;
+    height: 75px;
     display: flex;
     flex-direction: row;
     padding: 20px 0px 0px 120px;
@@ -82,61 +82,30 @@ button {
 
 }
 
-#banner {
-    max-height: 50vh;
+.banner {
+    margin-top: 90px;
+    display: relative; /*should be position:relative but I put display: relative"*/
+    height: 377px;
+}
 
+.center-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    display: relative;
+    height: 377px;
 }
 
 #header {
-    margin-top:12vh;
-    display: relative;
     background-image: url("pa_banner_4.png");
-    height: 50vh;
     background-size: cover;
     
 }
 
-
-#stat-container {
-    text-align: center;
-}
-
-#stats {
-    display: flex;
-    flex-direction: row;
-    height: 30vh;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.stat {
-    margin: 40px 90px 40px 90px;
-    width: 16%;
-}
-
-.stat-title {
-    display: flex;
-    flex-direction: row;
-}
-
-.stat-number {
-    font-size: 2.2em;
-    margin: 19px 0px 20px 24px;
-    font-family: 'Fjalla One', sans-serif;
-    text-transform: uppercase;
-}
-
-.stat-text {
-    font-size: 1.13em;
-    width: 87%;
-    text-align: left;
-
-}
-
 #logo {
-    max-height: 7vh;
+    max-height: 53px;
     image-rendering: crisp-edges;
     image-rendering: optimizeQuality;
     image-rendering: -moz-crisp-edges;
@@ -184,9 +153,154 @@ button {
 
 #end {
     margin-right: 120px;
+    /*denotes end of nav page*/
+}
+
+#footer {
+    color: white;
+    background-color: #0D346C;
+    height: 38px;
+    padding: 113px 0px 0px 70px;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #348CFB;
+    border-radius: 8px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+}
+
+#video-container {
+    display: flex;
+    flex-direction: row;
+    /* padding: 120px; */
+}
+
+#v-article {
+    margin-left: 100px;
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 60%;
 }
 
 
+
+#v-text {
+    margin-top: 20px;
+}
+
+.section {
+    padding: 100px 120px 100px 120px;
+}
+
+#summary {
+    background-color: #E8F1FC;
+}
+
+
+#summary-text {
+    font-size: 1.2em;
+    margin-left: 60px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#summary-text button {
+    max-width: 20%;
+}
+
+#summary-headline {
+    margin-bottom: 40px;
+}
+
+#image-and-text {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.testimonial-grid {
+    background-color: #E8F1FC;
+    display: flex;
+    padding: 50px 50px 20px 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 30px 20px;
+    color:#0D346C;
+    padding: 30px 60px 30px 60px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.testimonial i {
+    
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* || LANDING PAGE ||*/
+
+
+/*stats*/
+#stat-container {
+    text-align: center;
+}
+
+#stats {
+    display: flex;
+    flex-direction: row;
+    height: 226px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.stat {
+    margin: 40px 90px 40px 90px;
+    width: 16%;
+}
+
+.stat-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.stat-number {
+    font-size: 2.2em;
+    margin: 19px 0px 20px 24px;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+}
+
+.stat-text {
+    font-size: 1.13em;
+    width: 87%;
+    text-align: left;
+
+}
+
+i {
+    color:#48A9A6;
+}
+
+
+/*banner*/
 @keyframes slideInFromLeft {
     0% {
         visibility: hidden;
@@ -218,6 +332,14 @@ button {
   
 }
 
+#h-button:hover {
+    background-color: white;
+    border:1px solid #348CFB;
+    color: #348CFB;
+    cursor: pointer;
+}
+
+
 
 #h-headline {
     color:white;
@@ -226,10 +348,9 @@ button {
 }
 
 
-
 #h-article {
     width: 45%;
-    max-height: 20vh;
+    max-height: 150px;
     padding: 0px;
     margin: 70px 0px 0px 120px;
     border: none;
@@ -239,7 +360,7 @@ button {
 
 #h-text {
     
-    margin-top: 23px;
+    /* margin-top: 23px; */
     color: white;
     font-size: 1.2em;
     max-width: 90%;
@@ -247,7 +368,7 @@ button {
 
 #h-button {
     visibility: hidden;
-    background-color: #48A9A6;
+    background-color: #348CFB;
     margin-top: 60px;
     font-size: 1.5em;
     padding: 13px 53px 13px 53px;
@@ -256,25 +377,15 @@ button {
     
 }
 
-i {
-    color:#48A9A6;
-}
-
-#testimonial-grid {
-    background-color: #E8F1FC;
-    display: flex;
-    padding: 50px;
-    flex-direction: row;
-    align-items: center;
-    justify-content:center;
-    flex-wrap: wrap;
-   
-    
+#grid-landing {
+    flex-wrap:nowrap;
 }
 
 
+/*testimonials*/
 
-.testimonial {
+
+.testimonial-page {
     display: flex;
     flex-direction: column;
     margin: 0px 20px 30px 20px;
@@ -283,87 +394,20 @@ i {
     background-color: white;
     border-radius: 20px;
     width: 20%;
-    height:200px;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#testimonials-landing {
-    background-color: #E8F1FC;
-    display: flex;
-    padding: 50px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.testimonial-landing {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 20px 0px 20px;
-    color:#0D346C;
-    padding: 30px 60px 30px 60px;
-    background-color: white;
-    border-radius: 20px;
-
-}
-
-.testimonial-landing i {
+    height:240px;
     
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#footer {
-    color: white;
-    background-color: #0D346C;
-    height: 5vh;
-    padding: 15vh 0px 0px 70px;
-}
-
-::-webkit-scrollbar {
-    width: 20px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #348CFB;
-    border-radius: 8px;
-    border: 5px solid transparent;
-    background-clip: content-box;
-}
-
-#video-container {
-    display: flex;
-    flex-direction: row;
-    padding: 120px;
-}
-
-#v-article {
-    margin-left: 100px;
-    margin-top: 0px;
-    padding-top: 0px;
-    border: none;
-    width: 60%;
-}
-
-#v-headline {
-    font-size: 2em;
+    align-items: center;
 
 }
 
-#v-text {
-    margin-top: 20px;
-    font-size: 1em;
-}
 
+/*benefits*/
 #benefits {
     display: flex;
     flex-direction: column;
-    padding: 120px;
-    padding-top: 60px;
     justify-content: center;
     text-align: center;
+    background-color:white;
     
 }
 
@@ -372,7 +416,7 @@ i {
     margin-right: 5px;
 }
 
-#list {
+.list {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -392,6 +436,10 @@ i {
 
 }
 
+.service-list {
+    margin-left: 0px;
+    font-size: .8em;
+}
 
 .benefit-list {
     padding: 10px;
@@ -400,38 +448,15 @@ i {
  
 }
 
-#summary {
-    background-color: #E8F1FC;
-    padding: 100px 120px 100px 120px;
-}
 
-#about-container #summary-text {
-    margin-top: 30px;
-    font-size: 1.1em;
-}
-#summary-text {
-    font-size: 1.2em;
-    margin-left: 60px;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-}
 
-#summary-text button {
-    max-width: 20%;
-}
 
-#summary-headline {
-    margin-bottom: 40px;
-}
 
-#image-and-text {
-    display: flex;
-    flex-direction: row;
-}
+
+/* || ABOUT PAGE || */
 
 #about {
-    margin-top:12vh;
+    margin-top: 90px;
    
 }
 
@@ -439,8 +464,6 @@ i {
  
     max-width: 90%;
     padding: 100px 120px 100px 120px;
-
-
 }
 
 
@@ -461,7 +484,13 @@ i {
     display: flex;
     flex-direction: column;
     align-content: center;
+    margin-top: 90px;
     
+}
+
+#about-container #summary-text {
+    margin-top: 30px;
+    font-size: 1.1em;
 }
 
 #about-image {
@@ -492,6 +521,14 @@ i {
     font-size: 1em;
 }
 
+
+
+
+
+
+
+
+/* || CONTACT PAGE|| */
 #contact {
     display: flex;
     flex-direction: column;
@@ -526,11 +563,13 @@ input {
     background-color: #0D346C;
 }
 
+
+
+
+
+/* || SERVICES PAGE || */
 #services-header {
-    margin-top:12vh;
-    display: relative;
     background-image: url("pa_bg_2_cropped_2.png");
-    height: 45vh;
     background-size: cover;
     text-align: center;
     justify-content: center;
@@ -540,7 +579,7 @@ input {
         
     margin-top: 30px;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.3em;
     max-width: 100%;
     
     
@@ -549,13 +588,13 @@ input {
 #services-headline {
 
     color:white;
-    font-size: 4.2em;
+    font-size: 2.6em;
    
 }
 
 #services-article {
     width: 100%;
-    max-height: 20vh;
+    max-height: 150px;
     padding: 0px;
     margin: 100px 0px 0px 0px;
     border: none;
@@ -575,6 +614,10 @@ input {
 
 #services-container .text {
     font-size: 1.1em;
+}
+
+#services-about {
+    background-color: #E8F1FC;
 }
 
 .agenda-headline {
@@ -609,19 +652,14 @@ input {
     list-style: none;
 }
 
-button:hover {
-    background-color: white;
-    border:1px solid #348CFB;
-    color: #348CFB;
-    cursor: pointer;
-}
 
-#h-button:hover {
-    background-color: white;
-    border:1px solid #348CFB;
-    color: #348CFB;
-    cursor: pointer;
-}
+
+
+
+
+
+
+/* || TESTIMONIALS PAGE || */
 
 #testimonials-container {
    margin: 100px 120px 100px 120px;
@@ -629,21 +667,40 @@ button:hover {
     color: #0D346C;
 }
 
-.c-headline {
+
+
+#center-headline {
     text-align: center;
-    font-size: 2em;
-    font-family: 'Fjalla One', sans-serif;
-    text-transform: uppercase;
-    color:#0D346C;
-    margin: 10px 0px 0px 0px;
-    font-weight:500;
+    font-size: 2.4em;
+
 }
 
 #testimonials {
-    margin-top: 12vh;
+    margin-top: 90px;
     margin: 100px 120px 100px 120px;
     
 }
 
+
+
+select {
+    outline: none; /*allows for changing color of box*/
+    text-align: center;
+    font-size: .9em;
+    font-family: 'Fjalla One', sans-serif;
+    color: #348CFB;
+    background-color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 2px solid #348CFB;
+    padding: 5px 30px 5px 0px;
+    margin: 0px 5px 0px 5px;
+    font-weight: 500;
+}
+
+option {
+    color: #0D346C;
+
+}
 
 
