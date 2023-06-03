@@ -84,7 +84,7 @@ button:hover {
 
 .banner {
     margin-top: 90px;
-    display: relative; /*should be position:relative but I put display: relative"*/
+    position: relative; /*should be position:relative but I put display: relative"*/
     height: 377px;
 }
 
@@ -94,12 +94,13 @@ button:hover {
     align-items: center;
     justify-content: center;
     margin-top: 90px;
-    display: relative;
+    position: relative;
     height: 377px;
 }
 
 #header {
-    background-image: url("pa_banner_4.png");
+    background-image: url("pa_banner_size_2000.jpg");
+    /* background-color:#0D346C; */
     background-size: cover;
     
 }
@@ -112,13 +113,15 @@ button:hover {
 }
 
 #logo2 {
-    background-image: url("logo1a\ yt.png");
+    /* background-image: url("logo1a\ yt.png"); */
+    background-image: url(logo1a-yt-400.jpg);
     background-size: cover;
     position: relative;
     z-index: 100000000;
     max-height: 52.68px;
     width: 172px;
     color: blue;
+    
 }
 
 #pages {
@@ -153,7 +156,7 @@ button:hover {
 
 #end {
     margin-right: 120px;
-    /*denotes end of nav page*/
+    /*denotes page at end of nav*/
 }
 
 #footer {
@@ -301,7 +304,7 @@ i {
 
 
 /*banner*/
-@keyframes slideInFromLeft {
+/* @keyframes slideInFromLeft {
     0% {
         visibility: hidden;
       transform: translateX(-100%);
@@ -312,9 +315,9 @@ i {
       transform: translateX(0);
       opacity: 1;
     }
-  } 
+  }  */
 
-  @keyframes fadeIn {
+@keyframes fadeIn {
     0% {
         visibility: hidden;
         opacity: 0;
@@ -323,7 +326,7 @@ i {
         visibility: visible;
         opacity: 1;
     }
-  } 
+} 
 
 
 #h-headline, #h-aricle, #h-text {
@@ -372,7 +375,7 @@ i {
     margin-top: 60px;
     font-size: 1.5em;
     padding: 13px 53px 13px 53px;
-    animation: 1.6s ease-in 1.6s 1 fadeIn;
+    animation: 1.6s ease-in .2s 1 fadeIn;
     animation-fill-mode: forwards;
     
 }
@@ -569,7 +572,8 @@ input {
 
 /* || SERVICES PAGE || */
 #services-header {
-    background-image: url("pa_bg_2_cropped_2.png");
+    /* background-image: url("pa_bg_2_cropped_2.png"); */
+    background-image: url(pa_banner_bootcamp_resize.jpg);
     background-size: cover;
     text-align: center;
     justify-content: center;
@@ -602,14 +606,16 @@ input {
   
 }
 
-#services-container {
+/* #services-container {
     margin: 30px 120px 70px 120px;
-}
+
+} */
 
 #services-container .headline {
     color:#0D346C;
     margin-bottom: 30px;
-    margin-top: 60px;
+    /* margin-top: 60px; */
+   
 }
 
 #services-container .text {
@@ -618,22 +624,34 @@ input {
 
 #services-about {
     background-color: #E8F1FC;
+    /* padding-top: 30px; */
 }
 
 .agenda-headline {
     font-size: 1.3em;
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
-    color:#48A9A6;
+    color:#348CFB;
     margin: 20px 0px 20px 0px;
     font-weight:500;
 }
 
 #services-agenda {
-    border: 1px solid #48A9A6;
+    border: 4px solid #48A9A6;
     border-radius: 30px;
     padding: 30px;
-    margin-top: 60px;
+  /*   margin-top: 60px; */
+    margin: 30px 120px 70px 120px;
+    background-color: white;
+    
+}
+
+#services-agenda-container {
+   
+    /* margin-top: 100px; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #E8F1FC;
 }
 
 #services-agenda .headline {
@@ -642,7 +660,8 @@ input {
 
 #services-includes
 {
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    margin: 30px 120px 70px 120px;
 }
 
 .green {
